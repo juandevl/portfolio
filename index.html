@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Mi primera web</title>
+</head>
+<body class="font-sans text-slate-300 bg-gradient-to-r from-slate-700 to-gray-950 bg-fixed">
+    <header class="w-full text-base lg:text-xl">
+        <nav id="menu" class="w-full h-16 px-6 sm:px-10 flex flex-row flex-nowrap justify-between items-center backdrop-blur-lg z-10 fixed top-0">
+            <div>
+            </div>
+            <div>
+                <ul id="listadoMenu" class="list-none flex flex-row flex-nowrap gap-x-10">
+                    <li class="hover-li">
+                        <a href="#principal">Principal</a>
+                    </li>
+                    <li class="hover-li">
+                        <a href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="hover-li">
+                        <a href="#tecnologias">Tecnologías</a>
+                    </li>
+                    <li class="hover-li">
+                        <a href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="hover-li">
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="flex flex-col w-full items-center pt-16">
+
+        <section id="principal" class="scroll-mt-16 flex flex-col justify-center items-center">
+            <h1 class="text-6xl leading-tight">Bienvenido!</br><span>Soy Software Developer</span></h1>
+        </section>
+
+        <section id="sobre-mi"class="scroll-mt-16 flex flex-col items-center justify-center bg-slate-300">
+            <div class="container sm:w-3/4 p-8 flex flex-col gap-y-8 lg:flex-row  flex-nowrap  items-center">
+                <picture class="min-w-24 max-w-60 md:w-screen">
+                    <img src="./src/images/imgportfolio.jpg" alt="Foto mia" class="rounded-full ring ring-indigo-400 shadow-2xl shadow-indigo-600">
+                </picture>
+                <div class="leading-relaxed overflow-visible text-balance lg:text-end text-center lg:text-lg text-zinc-900">
+                    <p>Soy Juan, estudiante de sistemas, una persona apasionada por la programación y la naturaleza.</p>
+                    <p>Me considero una persona responsable, organizada, empatica, curiosa, perfeccionista y dedicado.</p>
+                    <p>Entre mis habilidades, puedo destacar una gran capacidad para la resolución de problemas, trabajo en equipo, compañerismo, capacidad para liderar equipos, enseñar y gestion de tareas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias" class="scroll-mt-16 flex flex-col justify-center items-center gap-y-2">
+            <h1 class="font-black text-2xl">Tecnologías</h1>
+            <p class="lg:text-lg text-sm">Poseo conocimiento en las siguientes tecnologías.</p>
+            <picture class=" container p-12 grid grid-cols-5 grid-rows-2 gap-10 sm:max-w-screen-sm w-full border-2 border-indigo-400">
+                <img src="./src/icons/csharp-icon.png" alt="csharp icon">
+                <img src="./src/icons/dotnet-icon.png" alt="dot net icon">
+                <img src="./src/icons/sqlserver-icon.png" alt="sql server icon">
+                <img src="./src/icons/php-icon.png" alt="php icon">
+                <img src="./src/icons/mysql-icon.png" alt="mysql icon">
+                <img src="./src/icons/git-icon.png" alt="git icon">
+                <img src="./src/icons/javascript-icon.png" alt="javascript icon">
+                <img src="./src/icons/html-icon.png" alt="html icon">
+                <img src="./src/icons/css-icon.png" alt="css icon">
+            </picture>
+        </section>
+        
+        <section id="proyectos" class="scroll-mt-16 flex flex-col justify-center items-center gap-4 bg-slate-300">
+            <h1 class="font-black text-2xl text-zinc-900">Proyectos</h1>
+            <div class="leading-relaxed overflow-visible text-center lg:text-lg text-zinc-900 w-1/2">
+                <p>Estos son algunos de los proyectos en los que estuve trabajando.</p>
+                <p></p>
+            </div>
+            <div id="proyectos-container" class=" grid place-content-center w-1/2 h-auto">
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacto" class="w-full h-40 pb-6 flex flex-col items-center backdrop-blur-lg bg-white/10">
+
+        <picture class="h-full flex flex-row justify-center items-center gap-14 text-center">
+            <div class="flex flex-col items-center">
+                <a id="github" href="https://github.com/juandevl">
+                    <img class="sm:w-10 md:w-12 w-8 " src="./src/icons/github-icon.png" alt="github icon">
+                </a>
+                <label for="github">Github</label>
+            </div>
+            <div class="flex flex-col items-center">
+                <a id="linkedin" href="https://www.linkedin.com/in/juan-ponce-developer/">
+                    <img class="sm:w-10 md:w-12 w-8" src="./src/icons/linkedin-icon.png" alt="linkedin icon">
+                </a>
+                <label for="linkedin">LinkedIn</label>
+            </div>
+        </picture>
+        <h3>Desarrollado con 🖤 por Juan Ponce.</h3>
+
+    </footer>
+
+</body>
+</html>
