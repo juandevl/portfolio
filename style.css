@@ -50,7 +50,7 @@ section{
 }
 
 
-@media (width <= 640px){
+@media (width <= 768px){
     #sidebar, #languaje{
         display: none;
     }
@@ -83,11 +83,11 @@ p{
     text-decoration-color: rgb(99 102 241 / 0.8);
 }
 
-#contacto picture div:hover{
+#contact picture div:hover{
     transform: scale(1.1);
     filter: drop-shadow(0 0 3px rgb(99 102 241 / 0.8));
 }
-#tecnologias picture img{
+#technologies picture img{
     width: 100%;
     max-width: 6rem;
     min-width: 3rem;

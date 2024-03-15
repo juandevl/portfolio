@@ -9,7 +9,7 @@ const lang = document.querySelector("#languaje");
 window.addEventListener('resize', () => {
     const isMobile = window.innerWidth;
     resetMenu();
-    if (isMobile > 640) {
+    if (isMobile > 768) {
         sidebar.style.display = "flex";
     }
     else {
