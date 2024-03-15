@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfolio</title>
+</head>
+<body class="font-sans text-slate-300 bg-gradient-to-r from-slate-700 to-gray-950 bg-fixed">
+    <header class="w-full text-base lg:text-xl">
+        <div id="btn-menu" class="w-6 h-5 z-20">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="menu" class="w-full h-16 px-6 sm:px-10 flex flex-row flex-nowrap sm:justify-between items-center backdrop-blur-lg z-10 fixed top-0">
+            <div id="languaje" class="w-20 h-6 z-20">
+                <button id="btn-en" class="hover-btn">EN</button>
+                <span>/</span>
+                <button id="btn-es" class="hover-btn">ES</button>
+            </div>
+            <div id="sidebar" class="sm:flex">
+                <ul class="list-none flex flex-col gap-y-14 sm:flex-row flex-nowrap pt-8 sm:pt-0 sm:gap-x-10 ">
+                    <li class="hover-li">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="hover-li">
+                        <a href="#aboutme">About me</a>
+                    </li>
+                    <li class="hover-li">
+                        <a href="#technologies">Technologies</a>
+                    </li>
+                    <li class="hover-li">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="hover-li">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="flex flex-col w-full items-center pt-16">
+
+        <section id="home" class="scroll-mt-16 flex flex-col justify-center items-center">
+            <h1 class="text-6xl leading-tight">Hi there!</br><span>I'm a Software Developer</span></h1>
+        </section>
+
+        <section id="aboutme" class="scroll-mt-16 flex flex-col items-center justify-center bg-slate-300">
+            <div class="container sm:w-3/4 p-8 flex flex-col gap-y-8 lg:flex-row  flex-nowrap  items-center">
+                <picture class="min-w-24 max-w-60 md:w-screen">
+                    <img src="./src/images/imgportfolio.jpg" alt="Foto mia" class="rounded-full ring ring-indigo-400 shadow-2xl shadow-indigo-600">
+                </picture>
+                <div class="leading-relaxed overflow-visible text-balance lg:text-end text-center lg:text-lg text-zinc-900">
+                    <p>I'm Juan, a systems student, a person passionate about programming and nature.</p>
+                    <p>I consider myself a responsible, organized, empathetic, curious, perfectionist, and dedicated person.</p>
+                    <p>Among my skills, I can highlight a great ability for problem-solving, teamwork, companionship, leadership skills, teaching, and task management.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technologies" class="scroll-mt-16 flex flex-col justify-center items-center gap-y-2">
+            <h1 class="font-black text-2xl">Technologies</h1>
+            <p class="lg:text-lg text-sm">I possess knowledge in the followings technologies.</p>
+            <picture class=" container p-12 grid grid-cols-5 grid-rows-2 gap-10 sm:max-w-screen-sm w-full">
+                <img src="./src/icons/csharp-icon.png" alt="csharp icon">
+                <img src="./src/icons/dotnet-icon.png" alt="dot net icon">
+                <img src="./src/icons/sqlserver-icon.png" alt="sql server icon">
+                <img src="./src/icons/php-icon.png" alt="php icon">
+                <img src="./src/icons/mysql-icon.png" alt="mysql icon">
+                <img src="./src/icons/git-icon.png" alt="git icon">
+                <img src="./src/icons/javascript-icon.png" alt="javascript icon">
+                <img src="./src/icons/html-icon.png" alt="html icon">
+                <img src="./src/icons/css-icon.png" alt="css icon">
+            </picture>
+        </section>
+        
+        <section id="projects" class="scroll-mt-16 flex flex-col justify-center items-center gap-4 bg-slate-300">
+            <h1 class="font-black text-2xl text-zinc-900">Projects</h1>
+            <div class="leading-relaxed overflow-visible text-center lg:text-lg text-zinc-900 w-1/2">
+                <p>Here are some of the projects I've been working on.</p>
+            </div>
+            <div id="projects-container" class=" grid place-content-center w-1/2 h-auto">
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact" class="w-full h-40 pb-6 flex flex-col items-center backdrop-blur-lg bg-white/10">
+
+        <picture class="h-full flex flex-row justify-center items-center gap-14 text-center">
+            <div class="flex flex-col items-center">
+                <a id="github" href="https://github.com/juandevl">
+                    <img class="sm:w-10 md:w-12 w-8 " src="./src/icons/github-icon.png" alt="github icon">
+                </a>
+                <label for="github">Github</label>
+            </div>
+            <div class="flex flex-col items-center">
+                <a id="linkedin" href="https://www.linkedin.com/in/juan-ponce-developer/">
+                    <img class="sm:w-10 md:w-12 w-8" src="./src/icons/linkedin-icon.png" alt="linkedin icon">
+                </a>
+                <label for="linkedin">LinkedIn</label>
+            </div>
+        </picture>
+        <h3>Developed with 🖤 by Juan Ponce.</h3>
+
+    </footer>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

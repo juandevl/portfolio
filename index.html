@@ -10,11 +10,19 @@
 </head>
 <body class="font-sans text-slate-300 bg-gradient-to-r from-slate-700 to-gray-950 bg-fixed">
     <header class="w-full text-base lg:text-xl">
-        <nav id="menu" class="w-full h-16 px-6 sm:px-10 flex flex-row flex-nowrap justify-between items-center backdrop-blur-lg z-10 fixed top-0">
-            <div>
+        <div id="btn-menu" class="w-6 h-5 z-20">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="menu" class="w-full h-16 px-6 sm:px-10 flex flex-row flex-nowrap sm:justify-between items-center backdrop-blur-lg z-10 fixed top-0">
+            <div id="languaje" class="w-20 h-6 z-20">
+                <button id="btn-en" class="hover-btn">EN</button>
+                <span>/</span>
+                <button id="btn-es" class="hover-btn">ES</button>
             </div>
-            <div>
-                <ul id="listadoMenu" class="list-none flex flex-row flex-nowrap gap-x-10">
+            <div id="sidebar" class="sm:flex">
+                <ul class="list-none flex flex-col gap-y-14 sm:flex-row flex-nowrap pt-8 sm:pt-0 sm:gap-x-10 ">
                     <li class="hover-li">
                         <a href="#principal">Principal</a>
                     </li>
@@ -37,18 +45,18 @@
     <main class="flex flex-col w-full items-center pt-16">
 
         <section id="principal" class="scroll-mt-16 flex flex-col justify-center items-center">
-            <h1 class="text-6xl leading-tight">Bienvenido!</br><span>Soy Software Developer</span></h1>
+            <h1 class="text-6xl leading-tight">Hola!</br><span>Soy Software Developer</span></h1>
         </section>
 
-        <section id="sobre-mi"class="scroll-mt-16 flex flex-col items-center justify-center bg-slate-300">
+        <section id="sobre-mi" class="scroll-mt-16 flex flex-col items-center justify-center bg-slate-300">
             <div class="container sm:w-3/4 p-8 flex flex-col gap-y-8 lg:flex-row  flex-nowrap  items-center">
                 <picture class="min-w-24 max-w-60 md:w-screen">
                     <img src="./src/images/imgportfolio.jpg" alt="Foto mia" class="rounded-full ring ring-indigo-400 shadow-2xl shadow-indigo-600">
                 </picture>
                 <div class="leading-relaxed overflow-visible text-balance lg:text-end text-center lg:text-lg text-zinc-900">
                     <p>Soy Juan, estudiante de sistemas, una persona apasionada por la programación y la naturaleza.</p>
-                    <p>Me considero una persona responsable, organizada, empatica, curiosa, perfeccionista y dedicado.</p>
-                    <p>Entre mis habilidades, puedo destacar una gran capacidad para la resolución de problemas, trabajo en equipo, compañerismo, capacidad para liderar equipos, enseñar y gestion de tareas.</p>
+                    <p>Me considero una persona responsable, organizada, empatica, curiosa, perfeccionista y dedicada.</p>
+                    <p>Entre mis habilidades, puedo destacar una gran capacidad para la resolución de problemas, trabajo en equipo, compañerismo, capacidad para liderar equipos, enseñar y gestión de tareas.</p>
                 </div>
             </div>
         </section>
@@ -102,5 +110,6 @@
 
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 </html>
