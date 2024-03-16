@@ -52,6 +52,7 @@ const resetMenu = () =>
 
 btnMenu.addEventListener("click", () =>
 {
+    //actualizacion de validacion
     if (sidebar.style.display == "flex") {
         resetMenu();
         sidebar.style.display = "none";
