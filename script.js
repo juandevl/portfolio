@@ -52,7 +52,7 @@ const resetMenu = () =>
 
 btnMenu.addEventListener("click", () =>
 {
-    if (sidebar.checkVisibility({visibilityProperty: true})) {
+    if (sidebar.style.display == "flex") {
         resetMenu();
         sidebar.style.display = "none";
     }
